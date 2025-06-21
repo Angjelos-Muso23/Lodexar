@@ -1,25 +1,19 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
+
+import logo from "../../../public/Logo.png";
 
 const FooterSection = () => {
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-16">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 relative">
-                <Image
-                  src="/Logo.png"
-                  alt="Lodexar Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-white font-bold text-xl">Lodexar</span>
+            <div className="mb-6 flex w-60 items-center justify-center">
+              <Image src={logo} alt="Lodexar Logo" className="w-full" />
             </div>
-            <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
+            <p className="mb-6 max-w-md leading-relaxed text-gray-400">
               Transforming businesses through innovative technology solutions.
               We help organizations achieve their digital transformation goals
               with cutting-edge software and services.
@@ -27,25 +21,25 @@ const FooterSection = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500 transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/20 transition-colors duration-300 hover:bg-blue-500"
               >
                 <span className="text-blue-400">📘</span>
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center hover:bg-cyan-500 transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-500/20 transition-colors duration-300 hover:bg-cyan-500"
               >
                 <span className="text-cyan-400">🐦</span>
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/20 transition-colors duration-300 hover:bg-green-500"
               >
                 <span className="text-green-400">💼</span>
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center hover:bg-purple-500 transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/20 transition-colors duration-300 hover:bg-purple-500"
               >
                 <span className="text-purple-400">📷</span>
               </a>
@@ -54,12 +48,12 @@ const FooterSection = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Services</h3>
+            <h3 className="mb-6 text-lg font-semibold">Services</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Custom Software Development
                 </a>
@@ -67,7 +61,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Cloud Infrastructure
                 </a>
@@ -75,7 +69,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Digital Transformation
                 </a>
@@ -83,7 +77,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   AI & Machine Learning
                 </a>
@@ -91,7 +85,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Cybersecurity Solutions
                 </a>
@@ -101,12 +95,12 @@ const FooterSection = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Company</h3>
+            <h3 className="mb-6 text-lg font-semibold">Company</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   About Us
                 </a>
@@ -114,7 +108,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Our Team
                 </a>
@@ -122,7 +116,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Careers
                 </a>
@@ -130,7 +124,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Blog
                 </a>
@@ -138,7 +132,7 @@ const FooterSection = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Press
                 </a>
@@ -149,26 +143,26 @@ const FooterSection = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Lodexar Technologies. All rights reserved.
+          <div className="flex flex-col items-center justify-between md:flex-row">
+            <div className="mb-4 text-sm text-gray-400 md:mb-0">
+              © 2025 Lodexar Technologies. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
               >
                 Terms of Service
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
               >
                 Cookie Policy
               </a>

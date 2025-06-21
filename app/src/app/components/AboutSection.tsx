@@ -2,32 +2,32 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section id="about-us" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-16">
-        <div className="text-center mb-16">
-          <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
+    <section id="about-us" className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-16">
+        <div className="mb-16 text-center">
+          <span className="mb-6 inline-block rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 text-sm font-medium text-white">
             About Lodexar
           </span>
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="mb-6 text-4xl leading-tight font-bold text-gray-900 lg:text-6xl">
             Pioneering the Future of
             <span className="block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Technology Solutions
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-600">
             Founded in 2020, Lodexar has been at the forefront of digital
             innovation, helping businesses transform their operations through
             cutting-edge technology solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="mb-20 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-cyan-50 p-8">
+              <h3 className="mb-4 text-2xl font-bold text-gray-900">
                 Our Mission
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="leading-relaxed text-gray-700">
                 To empower businesses with innovative technology solutions that
                 drive growth, efficiency, and competitive advantage in the
                 digital age. We believe that every organization deserves access
@@ -36,11 +36,11 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-2xl p-8 border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <div className="rounded-2xl border border-gray-100 bg-gradient-to-br from-slate-50 to-gray-50 p-8">
+              <h3 className="mb-4 text-2xl font-bold text-gray-900">
                 Our Vision
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="leading-relaxed text-gray-700">
                 To be the leading technology partner for businesses worldwide,
                 known for delivering exceptional solutions that create lasting
                 value and drive sustainable digital transformation.
@@ -49,36 +49,36 @@ const AboutSection = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Why Choose Lodexar?</h3>
+            <div className="rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 p-8 text-white">
+              <h3 className="mb-6 text-2xl font-bold">Why Choose Lodexar?</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm">✓</span>
+                  <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+                    <span className="text-sm text-white">✓</span>
                   </div>
                   <p className="text-white/90">
                     Expert team with 10+ years of industry experience
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm">✓</span>
+                  <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+                    <span className="text-sm text-white">✓</span>
                   </div>
                   <p className="text-white/90">
                     Proven track record with 500+ successful projects
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm">✓</span>
+                  <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+                    <span className="text-sm text-white">✓</span>
                   </div>
                   <p className="text-white/90">
                     24/7 support and maintenance services
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-sm">✓</span>
+                  <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+                    <span className="text-sm text-white">✓</span>
                   </div>
                   <p className="text-white/90">
                     Cutting-edge technology stack and methodologies
@@ -89,12 +89,12 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-white font-bold">500+</span>
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500">
+              <span className="text-xl font-bold text-white">500+</span>
             </div>
-            <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            <h4 className="mb-2 text-xl font-semibold text-gray-900">
               Projects Completed
             </h4>
             <p className="text-gray-600">
@@ -103,10 +103,10 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-white font-bold">50+</span>
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500">
+              <span className="text-xl font-bold text-white">50+</span>
             </div>
-            <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            <h4 className="mb-2 text-xl font-semibold text-gray-900">
               Expert Team
             </h4>
             <p className="text-gray-600">
@@ -115,10 +115,10 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-white font-bold">99.9%</span>
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500">
+              <span className="text-xl font-bold text-white">99.9%</span>
             </div>
-            <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            <h4 className="mb-2 text-xl font-semibold text-gray-900">
               Uptime Guarantee
             </h4>
             <p className="text-gray-600">

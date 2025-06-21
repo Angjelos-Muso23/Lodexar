@@ -1,43 +1,35 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
+
+import logo from "../../../public/Logo.png";
 
 const navigate = ["Home", "About Us", "Services", "Products", "Contact Us"];
 
 const Navbar = () => {
   return (
-    <nav className="w-full px-6 lg:px-16 py-4 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 backdrop-blur-sm border-b border-blue-400/20 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 relative">
-            <Image 
-              src="/Logo.png" 
-              alt="Lodexar Logo" 
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <span className="text-white font-bold text-xl hidden sm:block">
-            Lodexar
-          </span>
+    <nav className="sticky top-0 z-50 w-full border-b border-blue-400/20 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 px-6 py-4 backdrop-blur-sm lg:px-16">
+      <div className="mx-auto flex max-w-7xl items-center justify-between">
+        <div className="flex w-32 items-center justify-center">
+          <Image src={logo} alt="Lodexar Logo" className="w-full" />
         </div>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden items-center space-x-8 md:flex">
           {navigate.map((nav, i) => (
             <a
               key={i}
               href={`#${nav.toLowerCase().replace(" ", "-")}`}
-              className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group"
+              className="group relative font-medium text-gray-300 transition-colors duration-300 hover:text-blue-400"
             >
               {nav}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
-
-        <button className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
-          Get Started
-        </button>
+        <a href="#contact-us">
+          <button className="transform rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-cyan-600 hover:shadow-blue-500/25">
+            Get Started
+          </button>
+        </a>
       </div>
     </nav>
   );
