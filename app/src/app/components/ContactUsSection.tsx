@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 import CheckmarkAnimation from "./CheckMarkAnimation";
 import {
@@ -12,11 +12,15 @@ import {
   DialogTitle,
 } from "./Dialog";
 
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
-}
+// Type assertion for gtag - only on client side
+const gtag =
+  typeof window !== "undefined"
+    ? ((window as any).gtag as (
+        command: string,
+        eventName: string,
+        parameters?: any
+      ) => void)
+    : null;
 
 interface FormValues {
   firstname: string;
@@ -66,9 +70,11 @@ const ContactUsSection = () => {
     if (!response.ok)
       return setStatus("Oops! There was a problem submitting your form.");
 
-    window.gtag("event", "conversion_event_submit_lead_form", {
-      event_timeout: 2000,
-    });
+    if (gtag) {
+      gtag("event", "conversion_event_submit_lead_form", {
+        event_timeout: 2000,
+      });
+    }
 
     setModal(true);
     setStatus("");
