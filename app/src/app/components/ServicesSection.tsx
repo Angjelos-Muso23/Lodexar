@@ -39,18 +39,6 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "🔒",
-      title: "Cybersecurity Solutions",
-      description:
-        "Comprehensive security measures to protect your digital assets and ensure compliance with industry standards.",
-      features: [
-        "Security Audits",
-        "Penetration Testing",
-        "Compliance Management",
-        "Incident Response",
-      ],
-    },
-    {
       icon: "📊",
       title: "Data Analytics",
       description:
@@ -60,6 +48,19 @@ const ServicesSection = () => {
         "Data Warehousing",
         "Real-time Analytics",
         "Dashboard Creation",
+      ],
+    },
+    {
+      icon: "💰",
+      title: "Finance Technology Solutions",
+      description:
+        "Comprehensive financial technology solutions that streamline payment processing and enhance business financial operations.",
+      features: [
+        "Custom Payment Gateways",
+        "Secure Payment Links & Checkout Systems",
+        "Digital Invoicing Tools",
+        "Subscription & Billing Integration",
+        "Basic Reporting Dashboards",
       ],
     },
     {
@@ -77,37 +78,37 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-16">
-        <div className="text-center mb-16">
-          <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
+    <section id="services" className="bg-gray-50 py-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-16">
+        <div className="mb-16 text-center">
+          <span className="mb-6 inline-block rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-2 text-sm font-medium text-white">
             Our Services
           </span>
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="mb-6 text-4xl font-bold text-gray-900 lg:text-6xl">
             Comprehensive Tech
             <span className="block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Solutions & Services
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-600">
             We offer a complete suite of technology services designed to
             accelerate your business growth and digital transformation journey.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="transform rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500">
                 <span className="text-3xl">{service.icon}</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="mb-4 text-xl font-bold text-gray-900">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="mb-6 leading-relaxed text-gray-600">
                 {service.description}
               </p>
               <ul className="space-y-2">
@@ -116,7 +117,7 @@ const ServicesSection = () => {
                     key={featureIndex}
                     className="flex items-center text-sm text-gray-500"
                   >
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                    <span className="mr-3 h-2 w-2 rounded-full bg-blue-500"></span>
                     {feature}
                   </li>
                 ))}
@@ -126,22 +127,22 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-12 text-center text-white">
-          <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+        <div className="rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-600 p-12 text-center text-white">
+          <h3 className="mb-4 text-3xl font-bold lg:text-4xl">
             Ready to Transform Your Business?
           </h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="mx-auto mb-8 max-w-2xl text-xl text-blue-100">
             Let&apos;s discuss how our technology solutions can help you achieve
             your goals and stay ahead of the competition.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+          <a
+            href="#contact-us"
+            className="flex flex-col justify-center gap-4 sm:flex-row"
+          >
+            <button className="transform rounded-xl bg-white px-8 py-4 text-lg font-semibold text-blue-600 transition-all duration-300 hover:scale-105 hover:bg-gray-100">
               Get Free Consultation
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
-              View Case Studies
-            </button>
-          </div>
+          </a>
         </div>
       </div>
     </section>

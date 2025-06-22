@@ -268,24 +268,6 @@ const ContactUsSection = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-blue-500/20">
-                    <span className="text-xl text-blue-400">📍</span>
-                  </div>
-                  <div>
-                    <h4 className="mb-1 font-semibold text-white">
-                      Office Address
-                    </h4>
-                    <p className="text-gray-300">
-                      123 Innovation Drive
-                      <br />
-                      Tech Valley, CA 94000
-                      <br />
-                      United States
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
                   <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-cyan-500/20">
                     <span className="text-xl text-cyan-400">📧</span>
                   </div>
@@ -298,34 +280,8 @@ const ContactUsSection = () => {
                     </p>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-green-500/20">
-                    <span className="text-xl text-green-400">📞</span>
-                  </div>
-                  <div>
-                    <h4 className="mb-1 font-semibold text-white">Call Us</h4>
-                    <p className="text-gray-300">
-                      +1 (555) 123-4567
-                      <br />
-                      Mon-Fri: 9AM-6PM PST
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
-
-            {/* <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-              <p className="text-blue-100 mb-6">
-                Schedule a free consultation with our experts and discover how
-                we can transform your business with cutting-edge technology
-                solutions.
-              </p>
-              <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                Schedule Consultation
-              </button>
-            </div> */}
           </div>
         </div>
       </div>

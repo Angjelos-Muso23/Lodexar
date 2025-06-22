@@ -18,32 +18,6 @@ const FooterSection = () => {
               We help organizations achieve their digital transformation goals
               with cutting-edge software and services.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/20 transition-colors duration-300 hover:bg-blue-500"
-              >
-                <span className="text-blue-400">📘</span>
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-500/20 transition-colors duration-300 hover:bg-cyan-500"
-              >
-                <span className="text-cyan-400">🐦</span>
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/20 transition-colors duration-300 hover:bg-green-500"
-              >
-                <span className="text-green-400">💼</span>
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/20 transition-colors duration-300 hover:bg-purple-500"
-              >
-                <span className="text-purple-400">📷</span>
-              </a>
-            </div>
           </div>
 
           {/* Services */}
@@ -52,7 +26,7 @@ const FooterSection = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Custom Software Development
@@ -60,7 +34,7 @@ const FooterSection = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   Cloud Infrastructure
@@ -68,15 +42,7 @@ const FooterSection = () => {
               </li>
               <li>
                 <a
-                  href="#"
-                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
-                >
-                  Digital Transformation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="#services"
                   className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
                   AI & Machine Learning
@@ -84,10 +50,26 @@ const FooterSection = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
-                  Cybersecurity Solutions
+                  Data Analytics
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
+                >
+                  Finance Technology Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
+                >
+                  Digital Transformation
                 </a>
               </li>
             </ul>
@@ -115,26 +97,10 @@ const FooterSection = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
                 >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
-                >
-                  Press
+                  Services
                 </a>
               </li>
             </ul>
@@ -149,22 +115,20 @@ const FooterSection = () => {
             </div>
             <div className="flex space-x-6 text-sm">
               <a
-                href="#"
+                href="/lodexar_privacy_policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
               >
                 Privacy Policy
               </a>
               <a
-                href="#"
+                href="/lodexar_terms_of_service.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
               >
                 Terms of Service
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 transition-colors duration-300 hover:text-blue-400"
-              >
-                Cookie Policy
               </a>
             </div>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 import logo from "../../../public/Logo.png";
 
-const navigate = ["Home", "About Us", "Services", "Products", "Contact Us"];
+const navigate = ["Home", "About Us", "Services", "Contact Us"];
 
 const Navbar = () => {
   return (

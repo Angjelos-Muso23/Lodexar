@@ -15,9 +15,10 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="mx-auto max-w-3xl text-xl leading-relaxed text-gray-600">
-            Founded in 2020, Lodexar has been at the forefront of digital
-            innovation, helping businesses transform their operations through
-            cutting-edge technology solutions.
+            Founded in 2025, Lodexar is a technology startup driven by
+            innovation and collaboration. We create smart digital solutions that
+            accelerate growth and turn ideas into scalable, high-performance
+            systems.
           </p>
         </div>
 
@@ -28,11 +29,11 @@ const AboutSection = () => {
                 Our Mission
               </h3>
               <p className="leading-relaxed text-gray-700">
-                To empower businesses with innovative technology solutions that
-                drive growth, efficiency, and competitive advantage in the
-                digital age. We believe that every organization deserves access
-                to world-class technology that transforms their potential into
-                reality.
+                At Lodexar, we bring bold ideas to life through smart, scalable
+                technology. We don’t just build software we craft powerful
+                solutions that fuel growth, unlock innovation, and help
+                businesses lead with confidence in a fast-moving digital world.
+                Every product we deliver is built with precision and purpose.
               </p>
             </div>
 
@@ -41,9 +42,9 @@ const AboutSection = () => {
                 Our Vision
               </h3>
               <p className="leading-relaxed text-gray-700">
-                To be the leading technology partner for businesses worldwide,
-                known for delivering exceptional solutions that create lasting
-                value and drive sustainable digital transformation.
+                To drive growth through innovation and collaboration. We create
+                smart, purpose-driven solutions shaped by real-world needs and
+                trusted partnerships.
               </p>
             </div>
           </div>
@@ -56,74 +57,28 @@ const AboutSection = () => {
                   <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
                     <span className="text-sm text-white">✓</span>
                   </div>
-                  <p className="text-white/90">
-                    Expert team with 10+ years of industry experience
-                  </p>
+                  <p className="text-white/90">Built Around Your Ideas</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
                     <span className="text-sm text-white">✓</span>
                   </div>
-                  <p className="text-white/90">
-                    Proven track record with 500+ successful projects
-                  </p>
+                  <p className="text-white/90">Smart, Custom Solutions</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
                     <span className="text-sm text-white">✓</span>
                   </div>
-                  <p className="text-white/90">
-                    24/7 support and maintenance services
-                  </p>
+                  <p className="text-white/90">Agile and Reliable</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
                     <span className="text-sm text-white">✓</span>
                   </div>
-                  <p className="text-white/90">
-                    Cutting-edge technology stack and methodologies
-                  </p>
+                  <p className="text-white/90">Cross-Industry Expertise</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500">
-              <span className="text-xl font-bold text-white">500+</span>
-            </div>
-            <h4 className="mb-2 text-xl font-semibold text-gray-900">
-              Projects Completed
-            </h4>
-            <p className="text-gray-600">
-              Successfully delivered solutions across various industries
-            </p>
-          </div>
-
-          <div className="text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500">
-              <span className="text-xl font-bold text-white">50+</span>
-            </div>
-            <h4 className="mb-2 text-xl font-semibold text-gray-900">
-              Expert Team
-            </h4>
-            <p className="text-gray-600">
-              Skilled professionals with diverse technical expertise
-            </p>
-          </div>
-
-          <div className="text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500">
-              <span className="text-xl font-bold text-white">99.9%</span>
-            </div>
-            <h4 className="mb-2 text-xl font-semibold text-gray-900">
-              Uptime Guarantee
-            </h4>
-            <p className="text-gray-600">
-              Reliable infrastructure and exceptional performance
-            </p>
           </div>
         </div>
       </div>
