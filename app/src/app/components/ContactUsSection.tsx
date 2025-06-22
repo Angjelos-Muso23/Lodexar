@@ -274,9 +274,9 @@ const ContactUsSection = () => {
                   <div>
                     <h4 className="mb-1 font-semibold text-white">Email Us</h4>
                     <p className="text-gray-300">
-                      hello@lodexar.com
+                      john.avranidis@lodexar.com
                       <br />
-                      support@lodexar.com
+                      sofia.avranidi@lodexar.com
                     </p>
                   </div>
                 </div>
