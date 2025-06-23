@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { IoIosMail } from "react-icons/io";
 
 import CheckmarkAnimation from "./CheckMarkAnimation";
 import {
@@ -275,7 +276,9 @@ const ContactUsSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-cyan-500/20">
-                    <span className="text-xl text-cyan-400">📧</span>
+                    <span className="text-4xl text-cyan-400">
+                      <IoIosMail />
+                    </span>
                   </div>
                   <div>
                     <h4 className="mb-1 font-semibold text-white">Email Us</h4>

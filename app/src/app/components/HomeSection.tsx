@@ -1,4 +1,9 @@
+import Image from "next/image";
 import React from "react";
+
+import security from "../../../public/home/security.png";
+import solutions from "../../../public/home/solutions.png";
+import speed from "../../../public/home/speed.png";
 
 const HomeSection = () => {
   return (
@@ -7,7 +12,6 @@ const HomeSection = () => {
       style={{ minHeight: "calc(100vh - 72.8px" }}
       className="relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-6 md:py-0"
     >
-      {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:20px_20px]"></div>
       </div>
@@ -40,7 +44,7 @@ const HomeSection = () => {
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-3">
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/20">
-              <span className="text-2xl">⚡</span>
+              <Image src={speed} alt="Lightning" width={40} height={40} />
             </div>
             <h3 className="mb-2 font-semibold text-white">Lightning Fast</h3>
             <p className="text-sm text-gray-400">
@@ -50,7 +54,7 @@ const HomeSection = () => {
 
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-500/20">
-              <span className="text-2xl">🔒</span>
+              <Image src={security} alt="Secure" width={30} height={30} />
             </div>
             <h3 className="mb-2 font-semibold text-white">Secure & Reliable</h3>
             <p className="text-sm text-gray-400">
@@ -60,7 +64,7 @@ const HomeSection = () => {
 
           <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/20">
-              <span className="text-2xl">🚀</span>
+              <Image src={solutions} alt="Scalable" width={30} height={30} />
             </div>
             <h3 className="mb-2 font-semibold text-white">
               Scalable Solutions
