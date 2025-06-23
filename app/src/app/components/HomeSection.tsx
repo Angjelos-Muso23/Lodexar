@@ -9,7 +9,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      style={{ minHeight: "calc(100vh - 72.8px" }}
+      style={{ minHeight: "calc(100vh - 74.36px)" }}
       className="relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-6 md:py-0"
     >
       <div className="absolute inset-0 opacity-20">

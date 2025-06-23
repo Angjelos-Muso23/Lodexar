@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-blue-400/20 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 px-6 py-4 backdrop-blur-sm lg:px-16">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <div className="flex w-32 items-center justify-center">
+        <div className="flex w-40 items-center justify-center">
           <Image src={logo} alt="Lodexar Logo" className="w-full" />
         </div>
 
