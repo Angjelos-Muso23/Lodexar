@@ -1,9 +1,17 @@
+import Image from "next/image";
 import React from "react";
+
+import ai from "../../../public/service/AI.png";
+import cloud from "../../../public/service/CloudInfrastructure.png";
+import data from "../../../public/service/DataAnalytics.png";
+import digital from "../../../public/service/DigitalTransformation.png";
+import finance from "../../../public/service/Finance.png";
+import software from "../../../public/service/SoftwareDevelopement.png";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: "💻",
+      icon: software,
       title: "Custom Software Development",
       description:
         "Tailored software solutions designed to meet your specific business requirements and drive operational efficiency.",
@@ -15,7 +23,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "☁️",
+      icon: cloud,
       title: "Cloud Infrastructure",
       description:
         "Scalable cloud solutions that ensure reliability, security, and performance for your business applications.",
@@ -27,7 +35,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "🤖",
+      icon: ai,
       title: "AI & Machine Learning",
       description:
         "Intelligent solutions that leverage artificial intelligence to automate processes and gain valuable insights.",
@@ -39,7 +47,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "📊",
+      icon: data,
       title: "Data Analytics",
       description:
         "Transform raw data into actionable insights that drive informed decision-making and business growth.",
@@ -51,7 +59,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "💰",
+      icon: finance,
       title: "Finance Technology Solutions",
       description:
         "Comprehensive financial technology solutions that streamline payment processing and enhance business financial operations.",
@@ -64,7 +72,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      icon: "🔄",
+      icon: digital,
       title: "Digital Transformation",
       description:
         "End-to-end digital transformation services to modernize your business processes and technology stack.",
@@ -103,7 +111,12 @@ const ServicesSection = () => {
               className="transform rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500">
-                <span className="text-3xl">{service.icon}</span>
+                <Image
+                  src={service.icon}
+                  alt={service.title}
+                  width={40}
+                  height={40}
+                />
               </div>
               <h3 className="mb-4 text-xl font-bold text-gray-900">
                 {service.title}
